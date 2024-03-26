@@ -47,5 +47,18 @@ input[type="file"] {
 
 
 .files{
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+}
+
+.attachment {
+  width: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem;
+  background: darkgrey;
+  font-size: 0.5rem;
+  border-radius: 0.1rem !important;
 }

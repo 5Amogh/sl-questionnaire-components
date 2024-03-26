@@ -6,8 +6,9 @@
   (change)="basicUpload($event)"
 />
 <div class="d-flex">
-  <div class="bs-1 p-20" (click)="onAddApproval(file)">
+  <div class="bs-1 attachment" (click)="onAddApproval(file)">
     <i class="plus icon"></i>
+    <div class="files">{{files}}</div>
   </div>
   <div
     *ngFor="let item of data.files; let i = index"
@@ -44,4 +45,3 @@
   </div>
   </div>
 </div>
-<div class="files">{{files}}</div>
