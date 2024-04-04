@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { SuiModalService } from 'ng2-semantic-ui-v9';
+import { SuiModalService } from '@project-sunbird/ng2-semantic-ui';
 import { Observable } from 'rxjs';
 import { AlertMeta } from '../interfaces/alert.type';
 

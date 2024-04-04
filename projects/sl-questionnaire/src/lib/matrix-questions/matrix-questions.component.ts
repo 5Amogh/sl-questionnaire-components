@@ -1,4 +1,4 @@
-import { Component, HostListener, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
+import { Component, ContentChild, HostListener, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
 import {
   UntypedFormArray,
   UntypedFormBuilder,
@@ -10,7 +10,7 @@ import {
   ModalTemplate,
   SuiModalService,
   TemplateModalConfig,
-} from 'ng2-semantic-ui-v9';
+} from '@project-sunbird/ng2-semantic-ui';
 import { MatrixQuestion, Question } from '../interfaces/questionnaire.type';
 import { SlTranslateService } from '../services/translate.service';
 import * as _ from 'lodash-es';
@@ -32,6 +32,8 @@ export class MatrixQuestionsComponent implements OnInit {
   onPopState(event) {
     this.showBadgeAssingModel = false;
   }
+  @ContentChild('matrixTemplateRef', { static: false })
+  matrixTemplateRef: TemplateRef<any>;
   addText: string;
   submitText: string;
   cancelText: string;

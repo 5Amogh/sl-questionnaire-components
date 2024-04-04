@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TextInputComponent } from './text-input/text-input.component';
 import { DateInputComponent } from './date-input/date-input.component';
-import { SuiModule } from 'ng2-semantic-ui-v9';
+import { SuiModule } from '@project-sunbird/ng2-semantic-ui';
 import { NumberInputComponent } from './number-input/number-input.component';
 import { RangeInputComponent } from './range-input/range-input.component';
 import { RadioInputComponent } from './radio-input/radio-input.component';
